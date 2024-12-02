@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "game.h"
 #include <QLabel>
 #include <QPushButton>
 MainWindow::MainWindow(QWidget *parent)
@@ -7,13 +8,17 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QLabel *imgLabel = new QLabel(this);
-    imgLabel->resize(64,64);
-    imgLabel->move(200,100);
-    imgLabel->setPixmap(QPixmap(":/gemstone1.png").scaled(64,64));
+    QPixmap pixmap(":/images/your_image.png");
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+    Game* gameDlg=new Game();
+    gameDlg->show();
+}
+
