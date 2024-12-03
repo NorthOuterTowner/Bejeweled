@@ -3,6 +3,7 @@
 #include "game.h"
 #include <QLabel>
 #include <QPushButton>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -20,6 +21,6 @@ void MainWindow::on_pushButton_clicked()
 {
     Game* gameDlg=new Game();
     gameDlg->show();
-    //hi
+
 }
 

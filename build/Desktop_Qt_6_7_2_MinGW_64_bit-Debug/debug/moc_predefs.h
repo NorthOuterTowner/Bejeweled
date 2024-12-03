@@ -54,7 +54,6 @@
 #define __INT_LEAST8_MAX__ 0x7f
 #define __cpp_capture_star_this 201603L
 #define __SHRT_MAX__ 0x7fff
-#define __LDBL_MAX__ 1.18973149535723176502126385303097021e+4932L
 #define __FLT64X_MAX_10_EXP__ 4932
 #define __cpp_if_constexpr 201606L
 #define __LDBL_IS_IEC_60559__ 2
@@ -80,6 +79,7 @@
 #define __FLT32X_MANT_DIG__ 53
 #define __GCC_ATOMIC_CHAR16_T_LOCK_FREE 2
 #define __cpp_aligned_new 201606L
+#define __LDBL_MAX__ 1.18973149535723176502126385303097021e+4932L
 #define __USER_LABEL_PREFIX__ 
 #define __FLT32_MAX_10_EXP__ 38
 #define __FLT64X_EPSILON__ 1.08420217248550443400745280086994171e-19F64x
