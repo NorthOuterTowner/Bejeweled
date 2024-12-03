@@ -20,5 +20,6 @@ void MainWindow::on_pushButton_clicked()
 {
     Game* gameDlg=new Game();
     gameDlg->show();
+    //hi
 }
 
