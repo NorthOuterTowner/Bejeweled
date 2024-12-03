@@ -10,6 +10,7 @@ public:
     std::string getMode();
 private:
     std::string mode;
+    std::string color;
 };
 
 #endif // STONELABEL_H

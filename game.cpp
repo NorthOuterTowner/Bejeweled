@@ -52,6 +52,16 @@ void Game::init(){
     secondLabel=nullptr;
 
 }
+
+std::pair<int,int> Game::delStone(){
+    std::pair<int,int> ret;
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5;j++){
+            std::cout<<"del";
+        }
+    }
+    return ret;
+}
 //Mouse Click
 void Game::mousePressEvent(QMouseEvent *event){
 
@@ -82,14 +92,7 @@ void Game::mousePressEvent(QMouseEvent *event){
             firstLabel = nullptr;
             secondLabel = nullptr;
             waitforchage = false;
-
-
-
         }
-
     }
-
-
-
 }
 
