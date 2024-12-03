@@ -23,6 +23,7 @@ public:
     {
         if (Game->objectName().isEmpty())
             Game->setObjectName("Game");
+        Game->resize(800, 601);
 
         retranslateUi(Game);
 

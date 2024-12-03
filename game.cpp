@@ -1,8 +1,14 @@
 #include "game.h"
 #include "ui_game.h"
 #include "stonelabel.h"
+#include "globalvalue.h"
 #include <QLabel>
 #include <random>
+#include <vector>
+/*Space between Window and Labels*/
+#define upSpacer 80
+#define leftSpacer 100
+
 /**
  * @brief generate random digit from 1 to 10
  * @return random digit
@@ -32,11 +38,12 @@ void Game::init(){
     for(int row=0;row<8;row++){
         for(int line=0;line<8;line++){
             /*Need change to StoneLabel*/
-            QLabel *imgLabel = new QLabel(this);
-            imgLabel->resize(64,64);
-            imgLabel->move(row*64,line*64);
-            std::string pixStr=":/gemstone"+std::to_string(genRandom())+".png";
-            imgLabel->setPixmap(QPixmap(QString::fromStdString(pixStr)).scaled(64,64));
+            StoneLabel *imgLabel = new StoneLabel(this);
+            stones[row][line]=imgLabel;
+            imgLabel->resize(48,48);
+            imgLabel->move(row*48+leftSpacer,line*48+upSpacer);
+            std::string pixStr=":/"+imgLabel->getMode()+std::to_string(genRandom())+".png";
+            imgLabel->setPixmap(QPixmap(QString::fromStdString(pixStr)).scaled(48,48));
         }
     }
 }

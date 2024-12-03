@@ -10,12 +10,14 @@ CONFIG += c++17
 
 SOURCES += \
     game.cpp \
+    globalvalue.cpp \
     main.cpp \
     mainwindow.cpp \
     stonelabel.cpp
 
 HEADERS += \
     game.h \
+    globalvalue.h \
     mainwindow.h \
     stonelabel.h
 
