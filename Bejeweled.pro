@@ -11,11 +11,13 @@ CONFIG += c++17
 SOURCES += \
     game.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    stonelabel.cpp
 
 HEADERS += \
     game.h \
-    mainwindow.h
+    mainwindow.h \
+    stonelabel.h
 
 FORMS += \
     game.ui \
