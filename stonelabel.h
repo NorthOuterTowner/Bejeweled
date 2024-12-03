@@ -3,6 +3,7 @@
 #include <QLabel>
 class StoneLabel:public QLabel
 {
+    Q_OBJECT
 public:
     StoneLabel(QWidget* parent,std::string mode="gemstone");
     void setMode(std::string mode);
