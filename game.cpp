@@ -75,6 +75,7 @@ std::pair<int,int> Game::delStone(){
 }
 //Mouse Click
 void Game::mousePressEvent(QMouseEvent *event){
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     delStone();
     std::cout<<"DELETE Success"<<std::endl;
@@ -82,6 +83,9 @@ void Game::mousePressEvent(QMouseEvent *event){
 =======
 
 >>>>>>> parent of c78b449 (update the delete method)
+=======
+    /*‘delStone();*/
+>>>>>>> Stashed changes
     QWidget* clickedWidget=this->childAt(event->pos());
     StoneLabel* label=qobject_cast<StoneLabel*>(clickedWidget);
         if(clickedWidget&&clickedWidget->inherits("QLabel")){
