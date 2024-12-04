@@ -11,15 +11,19 @@ CONFIG += c++17
 SOURCES += \
     game.cpp \
     globalvalue.cpp \
+    gridwidget.cpp \
     main.cpp \
-    maingaminglabel.cpp \
     mainwindow.cpp \
     stonelabel.cpp
 
 HEADERS += \
     game.h \
     globalvalue.h \
+<<<<<<< HEAD
+    gridwidget.h \
     maingaminglabel.h \
+=======
+>>>>>>> parent of c78b449 (update the delete method)
     mainwindow.h \
     stonelabel.h
 
