@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     game.cpp \
     globalvalue.cpp \
+    gridwidget.cpp \
     main.cpp \
     maingaminglabel.cpp \
     mainwindow.cpp \
@@ -19,6 +20,7 @@ SOURCES += \
 HEADERS += \
     game.h \
     globalvalue.h \
+    gridwidget.h \
     maingaminglabel.h \
     mainwindow.h \
     stonelabel.h

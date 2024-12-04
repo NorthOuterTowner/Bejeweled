@@ -7,6 +7,7 @@
 #include <random>
 #include <vector>
 #include <iostream>
+#include "gridwidget.h"
 /*Space between Window and Labels*/
 #define upSpacer 80
 #define leftSpacer 100
@@ -15,6 +16,7 @@
  * @brief generate random digit from 1 to 10
  * @return random digit
  */
+GridWidget* gameWidget;
 int genRandom(){
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -39,17 +41,13 @@ Game::~Game()
 void Game::init(){
     for(int row=0;row<8;row++){
         for(int line=0;line<8;line++){
-            /*Need change to StoneLabel*/
+            //Need change to StoneLabel
             StoneLabel *imgLabel = new StoneLabel(this);
             stones[row][line]=imgLabel;
-            imgLabel->resize(48,48);
-            imgLabel->move(row*48+leftSpacer,line*48+upSpacer);
-            int type=genRandom();
-            imgLabel->setType(type);
-            std::string pixStr=":/"+imgLabel->getMode()+std::to_string(type)+".png";
-            imgLabel->setPixmap(QPixmap(QString::fromStdString(pixStr)).scaled(48,48));
         }
     }
+    gameWidget=new GridWidget(this);
+    gameWidget->move(leftSpacer,upSpacer);
     waitforchage=false;
     firstLabel=nullptr;
     secondLabel=nullptr;
@@ -109,6 +107,8 @@ std::vector<std::pair<int,int>> Game::delStone(){
 //Mouse Click
 void Game::mousePressEvent(QMouseEvent *event){
     delStone();
+    std::cout<<"DELETE Success"<<std::endl;
+    gameWidget->updateData();
     QWidget* clickedWidget=this->childAt(event->pos());
     StoneLabel* label=qobject_cast<StoneLabel*>(clickedWidget);
         if(clickedWidget&&clickedWidget->inherits("QLabel")){
@@ -119,7 +119,6 @@ void Game::mousePressEvent(QMouseEvent *event){
 
         }else if(waitforchage&&secondLabel==nullptr){
             //满足消除条件可交换？
-
             secondLabel = qobject_cast<StoneLabel*>(clickedWidget);
             secondLabel->setStyleSheet("background-color: lightblue;");
 

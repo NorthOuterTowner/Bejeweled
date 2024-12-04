@@ -17,7 +17,7 @@ public:
     explicit Game(QWidget *parent = nullptr);
     ~Game();
     void init();
-    std::vector<std::pair<int,int>> delStone();
+    static std::vector<std::pair<int,int>> delStone();
 
 private:
     void mousePressEvent(QMouseEvent *event) override;
