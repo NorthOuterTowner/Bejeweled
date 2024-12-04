@@ -6,8 +6,11 @@
 #include <QLabel>
 #include <random>
 #include <vector>
+<<<<<<< HEAD
 #include <iostream>
 #include "gridwidget.h"
+=======
+>>>>>>> parent of c78b449 (update the delete method)
 /*Space between Window and Labels*/
 #define upSpacer 80
 #define leftSpacer 100
@@ -44,6 +47,13 @@ void Game::init(){
             //Need change to StoneLabel
             StoneLabel *imgLabel = new StoneLabel(this);
             stones[row][line]=imgLabel;
+<<<<<<< HEAD
+=======
+            imgLabel->resize(48,48);
+            imgLabel->move(row*48+leftSpacer,line*48+upSpacer);
+            std::string pixStr=":/"+imgLabel->getMode()+std::to_string(genRandom())+".png";
+            imgLabel->setPixmap(QPixmap(QString::fromStdString(pixStr)).scaled(48,48));
+>>>>>>> parent of c78b449 (update the delete method)
         }
     }
     gameWidget=new GridWidget(this);
@@ -54,61 +64,24 @@ void Game::init(){
 
 }
 
-/*Decide that which StoneLabel should be delete*/
-std::vector<std::pair<int,int>> Game::delStone(){
-    std::vector<std::pair<int,int>> deleteContent;
-    for (int i = 0; i < 8; ++i) {
-        int count = 1;
-        for (int j = 1; j < 8; ++j) {
-            if (stones[i][j] && stones[i][j]->getType() == stones[i][j - 1]->getType()) {
-                ++count;
-            } else {
-                if (count >= 3) {
-                    for (int k = j - count; k < j; ++k) {
-                        deleteContent.push_back({i, k});
-                    }
-                }
-                count = 1;
-            }
-        }
-        if (count >= 3) {
-            for (int k = 8 - count; k < 8; ++k) {
-                deleteContent.push_back({i, k});
-            }
+std::pair<int,int> Game::delStone(){
+    std::pair<int,int> ret;
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5;j++){
+            std::cout<<"del";
         }
     }
-    for (int j = 0; j < 8; ++j) {
-        int count = 1;
-        for (int i = 1; i < 8; ++i) {
-            if (stones[i][j] && stones[i][j]->getType() == stones[i - 1][j]->getType()) {
-                ++count;
-            } else {
-                if (count >= 3) {
-                    for (int k = i - count; k < i; ++k) {
-                        deleteContent.push_back({k, j});
-                    }
-                }
-                count = 1;
-            }
-        }
-        if (count >= 3) {
-            for (int k = 8 - count; k < 8; ++k) {
-                deleteContent.push_back({k, j});
-            }
-        }
-    }
-    /*Here need to be repaint*/
-    for(int i=0;i<deleteContent.size();i++){
-        stones[deleteContent[i].first][deleteContent[i].second]=nullptr;
-    }
-    return deleteContent;
+    return ret;
 }
-
 //Mouse Click
 void Game::mousePressEvent(QMouseEvent *event){
+<<<<<<< HEAD
     delStone();
     std::cout<<"DELETE Success"<<std::endl;
     gameWidget->updateData();
+=======
+
+>>>>>>> parent of c78b449 (update the delete method)
     QWidget* clickedWidget=this->childAt(event->pos());
     StoneLabel* label=qobject_cast<StoneLabel*>(clickedWidget);
         if(clickedWidget&&clickedWidget->inherits("QLabel")){

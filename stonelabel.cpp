@@ -10,9 +10,3 @@ void StoneLabel::setMode(std::string mode){
 std::string StoneLabel::getMode(){
     return this->mode;
 }
-int StoneLabel::getType(){
-    return this->type;
-}
-void StoneLabel::setType(int type){
-    this->type=type;
-}
