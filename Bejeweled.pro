@@ -12,12 +12,14 @@ SOURCES += \
     game.cpp \
     globalvalue.cpp \
     main.cpp \
+    maingaminglabel.cpp \
     mainwindow.cpp \
     stonelabel.cpp
 
 HEADERS += \
     game.h \
     globalvalue.h \
+    maingaminglabel.h \
     mainwindow.h \
     stonelabel.h
 

@@ -8,9 +8,11 @@ public:
     StoneLabel(QWidget* parent,std::string mode="gemstone");
     void setMode(std::string mode);
     std::string getMode();
+    int getType();
+    void setType(int);
 private:
     std::string mode;
-    std::string color;
+    int type;
 };
 
 #endif // STONELABEL_H
