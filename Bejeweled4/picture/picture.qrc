@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>mouse1.png</file>
+        <file>mouse2.png</file>
+        <file>mouse3.png</file>
+        <file>StartPage/background.png</file>
+        <file>title.png</file>
+        <file>pause.png</file>
+        <file>Settingpage/dialogbox.png</file>
+        <file>Settingpage/slider-track-1.png</file>
+        <file>Settingpage/thumb.png</file>
+        <file>Settingpage/dialogtitle.png</file>
+        <file>Settingpage/slider-track-2.png</file>
+        <file>Settingpage/DialogButtonGlow.png</file>
+        <file>Settingpage/dialogbutton.png</file>
+        <file>backdrop00.jpg</file>
+        <file>blueBar.png</file>
+        <file>arrow.png</file>
+        <file>button/Level_back.png</file>
+        <file>Level.png</file>
+        <file>end.png</file>
+        <file>ice.jpg</file>
+    </qresource>
+</RCC>
