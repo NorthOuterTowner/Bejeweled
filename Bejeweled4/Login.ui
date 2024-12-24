@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QMainWindow" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_image">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>0</y>
+      <width>391</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:7px;padding:0px 0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 87 20pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Login Now</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>200</y>
+      <width>291</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLineEdit" name="lineEdit_username">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(247, 247, 247);
+border:1px groove gray;border-radius:
+7px;padding:2px 4px;
+font: 10pt &quot;Candara&quot;;</string>
+       </property>
+       <property name="placeholderText">
+        <string>Places input your Id</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_password">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(247, 247, 247);
+border:1px groove gray;border-radius:
+7px;padding:2px 4px;
+font: 10pt &quot;Candara&quot;;</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::EchoMode::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>Please input your password</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>lineEdit_password</zorder>
+    <zorder>lineEdit_username</zorder>
+   </widget>
+   <widget class="QPushButton" name="btn_signin">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>360</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.54, y2:0, 
+stop:0.0112994 rgba(64, 145, 252, 255), 
+stop:1 rgba(255, 255, 255, 255));
+color: rgb(255, 255, 255);
+
+border:0px groove gray;border-radius:
+7px;padding:2px 4px;
+font: 14pt &quot;Candara&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Sign in</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_signup">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>360</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>50</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.54, y2:0, 
+stop:0.0112994 rgba(64, 145, 252, 255), 
+stop:1 rgba(255, 255, 255, 255));
+color: rgb(255, 255, 255);
+
+border:0px groove gray;border-radius:
+7px;padding:2px 4px;
+font: 14pt &quot;Candara&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Sign up</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

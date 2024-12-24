@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>End</class>
+ <widget class="QWidget" name="End">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="scoreLabel">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>90</y>
+     <width>241</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>游戏结束</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="returnButton">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>210</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: rgb(255, 170, 0);             /* 文字颜色 */
+	font: 700 9pt &quot;Microsoft YaHei UI&quot;;
+    border: 2px solid #2980b9; /* 边框颜色 */
+    border-radius: 5px;       /* 圆角 */
+    font-size: 12px;          /* 字体大小 */
+}</string>
+   </property>
+   <property name="text">
+    <string>返回主菜单</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="nextButton">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>160</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: rgb(255, 170, 0);             /* 文字颜色 */
+	font: 700 9pt &quot;Microsoft YaHei UI&quot;;
+    border: 2px solid #2980b9; /* 边框颜色 */
+    border-radius: 5px;       /* 圆角 */
+    font-size: 12px;          /* 字体大小 */
+}</string>
+   </property>
+   <property name="text">
+    <string>下一关</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="retryButton">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>160</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: rgb(255, 170, 0);             /* 文字颜色 */
+	font: 700 9pt &quot;Microsoft YaHei UI&quot;;
+    border: 2px solid #2980b9; /* 边框颜色 */
+    border-radius: 5px;       /* 圆角 */
+    font-size: 12px;          /* 字体大小 */
+}</string>
+   </property>
+   <property name="text">
+    <string>重新挑战</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>background</zorder>
+  <zorder>scoreLabel</zorder>
+  <zorder>returnButton</zorder>
+  <zorder>nextButton</zorder>
+  <zorder>retryButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

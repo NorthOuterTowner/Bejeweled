@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>build/Fruits/Fruit1.png</file>
+        <file>build/Fruits/Fruit2.png</file>
+        <file>build/Fruits/Fruit3.png</file>
+        <file>build/Fruits/Fruit4.png</file>
+        <file>build/Fruits/Fruit5.png</file>
+        <file>build/Fruits/Fruit6.png</file>
+        <file>build/Fruits/Fruit7.png</file>
+        <file>build/Fruits/Fruit8.png</file>
+        <file>build/Fruits/Fruit9.png</file>
+    </qresource>
+</RCC>
