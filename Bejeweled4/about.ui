@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>About</class>
+ <widget class="QDialog" name="About">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #f5f5f5; /* 浅灰色背景 */
+color: #333333; /* 深灰色文字 */
+font-family: &quot;Segoe UI&quot;, Arial, sans-serif; /* 设置字体 */
+font-size: 14px; /* 默认字体大小 */
+</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>131</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QLabel{font-size: 24px; /* 更大字体 */
+    font-weight: bold; /* 加粗 */
+    color: #2980b9; /* 蓝色文字 */
+    border-bottom: 2px solid #2980b9; /* 底部蓝色边框 */
+    padding-bottom: 10px; /* 增加底部空间 */
+    margin-bottom: 15px; /* 与下面内容的距离 */
+}
+/* 鼠标悬停效果 */
+QLabel:hover {
+    color: #16a085; /* 绿色文字 */
+    text-decoration: underline; /* 添加下划线 */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>小组成员：</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>239</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    background: transparent; /* 背景透明 */
+    color: #2c3e50; /* 深蓝灰色文字 */
+    font-size: 16px; /* 字体稍大 */
+    border: none; /* 无边框 */
+    padding: 5px; /* 内间距 */
+    text-align: center; /* 居中对齐 */
+	font: 18pt &quot;隶书&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>张旭旸</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    background: transparent; /* 背景透明 */
+    color: #2c3e50; /* 深蓝灰色文字 */
+    font-size: 16px; /* 字体稍大 */
+    border: none; /* 无边框 */
+    padding: 5px; /* 内间距 */
+    text-align: center; /* 居中对齐 */
+	font: 18pt &quot;隶书&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>周锦泽</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>115</width>
+     <height>78</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background: transparent; /* 背景透明 */
+    color: #2c3e50; /* 深蓝灰色文字 */
+    font-size: 16px; /* 字体稍大 */
+    border: none; /* 无边框 */
+    padding: 5px; /* 内间距 */
+    text-align: center; /* 居中对齐 */
+	font: 18pt &quot;隶书&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>马辰宇</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>70</y>
+     <width>161</width>
+     <height>78</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background: transparent; /* 背景透明 */
+    color: #2c3e50; /* 深蓝灰色文字 */
+    font-size: 16px; /* 字体稍大 */
+    border: none; /* 无边框 */
+    padding: 5px; /* 内间距 */
+    text-align: center; /* 居中对齐 */
+	font: 18pt &quot;隶书&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>李瑞泽</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>70</y>
+     <width>329</width>
+     <height>78</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background: transparent; /* 背景透明 */
+    color: #2c3e50; /* 深蓝灰色文字 */
+    font-size: 16px; /* 字体稍大 */
+    border: none; /* 无边框 */
+    padding: 5px; /* 内间距 */
+    text-align: center; /* 居中对齐 */
+	font: 18pt &quot;隶书&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>张琪</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>About</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>About</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,10 @@
+release/game.o
+release/globalvalue.o
+release/main.o
+release/mainwindow.o
+release/stonelabel.o
+release/qrc_jewel.o
+release/qrc_qmake_qmake_qm_files.o
+release/moc_game.o
+release/moc_mainwindow.o
+release/moc_stonelabel.o
